@@ -16,15 +16,16 @@ public class BruteCollinearPoints {
             throw new IllegalArgumentException("Argument is null.");
         }
 
-        if (checkDuplicates(points)) {
-            throw new IllegalArgumentException("Duplicate points in the array.");
-        }
-
         for (int i = 0; i < points.length; i += 1) {
             if (points[i] == null) {
                 throw new IllegalArgumentException("Null point in the array.");
             }
         }
+
+        if (checkDuplicates(points)) {
+            throw new IllegalArgumentException("Duplicate points in the array.");
+        }
+
 
         Point[] pointsCopy = new Point[points.length];
         System.arraycopy(points, 0, pointsCopy, 0, points.length);
@@ -46,7 +47,7 @@ public class BruteCollinearPoints {
                     for (int n = m + 1; n < pointsCopy.length; n += 1) {
                         double slopeIN = pointsCopy[i].slopeTo(pointsCopy[n]);
                         if (slopeIJ == slopeIN) {
-                                segmentList.add(new LineSegment(pointsCopy[i],pointsCopy[n]));
+                                segmentList.add(new LineSegment(pointsCopy[i], pointsCopy[n]));
                                 count += 1;
                         }
                     }
@@ -89,9 +90,12 @@ public class BruteCollinearPoints {
 
     private boolean checkDuplicates(Point[] points) {
         for (int i = 0; i < points.length - 1; i += 1) {
-            if (points[i].slopeTo(points[i + 1]) == Double.NEGATIVE_INFINITY) {
-                return true;
+            for (int j = i + 1; j < points.length; j += 1) {
+                if (points[i].slopeTo(points[j]) == Double.NEGATIVE_INFINITY) {
+                    return true;
+                }
             }
+
         }
         return false;
     }
@@ -103,7 +107,7 @@ public class BruteCollinearPoints {
 
     // the line segments
     public LineSegment[] segments() {
-        return segments;
+        return segments.clone();
     }
 
     public static void main(String[] args) {

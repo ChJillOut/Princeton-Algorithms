@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Point.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="315">
+              <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -24,11 +24,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FastCollinearPoints.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FastCollinearPoints.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FastCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+            <state relative-caret-position="2992">
+              <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="In.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../Week 1/algs4.jar!/edu/princeton/cs/algs4/In.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7568">
+              <caret line="351" selection-start-line="351" selection-end-line="351" />
             </state>
           </provider>
         </entry>
@@ -36,7 +45,7 @@
       <file leaf-file-name="LineSegment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LineSegment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
+            <state relative-caret-position="660">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
@@ -45,8 +54,8 @@
       <file leaf-file-name="BruteCollinearPoints.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BruteCollinearPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1407">
-              <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+            <state relative-caret-position="315">
+              <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -71,14 +80,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/LineSegment.java" />
-        <option value="$PROJECT_DIR$/src/Point.java" />
         <option value="$PROJECT_DIR$/src/FastCollinearPoints.java" />
         <option value="$PROJECT_DIR$/src/BruteCollinearPoints.java" />
+        <option value="$PROJECT_DIR$/src/Point.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="797" />
@@ -88,6 +96,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -104,9 +115,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -139,7 +147,7 @@
     <configuration name="FastCollinearPoints" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FastCollinearPoints" />
       <module name="Week 3" />
-      <option name="PROGRAM_PARAMETERS" value="input10.txt" />
+      <option name="PROGRAM_PARAMETERS" value="input8.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -207,7 +215,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="23" width="1440" height="797" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -218,13 +226,13 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32918397" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32918397" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Style Checker" order="7" weight="0.32918397" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16041666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16041666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -247,10 +255,93 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="8" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>Point(4000, 30000)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>B == new Point(4000,30000)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FastCollinearPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../Week 1/algs4.jar!/edu/princeton/cs/algs4/In.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7568">
+          <caret line="351" selection-start-line="351" selection-end-line="351" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineSegment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BruteCollinearPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2442">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LineSegment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BruteCollinearPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FastCollinearPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1694">
+          <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1408">
@@ -425,34 +516,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/input6.txt" />
     <entry file="file://$PROJECT_DIR$/src/input9.txt" />
-    <entry file="file://$PROJECT_DIR$/src/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LineSegment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="660">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BruteCollinearPoints.java">
+    <entry file="jar://$PROJECT_DIR$/../Week 1/algs4.jar!/edu/princeton/cs/algs4/In.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1407">
-          <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        <state relative-caret-position="7568">
+          <caret line="351" selection-start-line="351" selection-end-line="351" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FastCollinearPoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        <state relative-caret-position="2992">
+          <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BruteCollinearPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="115" column="29" lean-forward="true" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

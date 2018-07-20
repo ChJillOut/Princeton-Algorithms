@@ -16,14 +16,14 @@ public class FastCollinearPoints {
             throw new IllegalArgumentException("Argument is null.");
         }
 
-        if (checkDuplicates(points)) {
-            throw new IllegalArgumentException("Duplicate points in the array.");
-        }
-
         for (int i = 0; i < points.length; i += 1) {
             if (points[i] == null) {
                 throw new IllegalArgumentException("Null point in the array.");
             }
+        }
+
+        if (checkDuplicates(points)) {
+            throw new IllegalArgumentException("Duplicate points in the array.");
         }
 
         Point[] pointsCopy = new Point[points.length - 1];
@@ -47,29 +47,33 @@ public class FastCollinearPoints {
             Arrays.sort(pointsCopy, refPoint.slopeOrder());
             int j = 0;
             while (j < pointsCopy.length - 1) {
-                int count = 2;
+                int count = 1;
+                int element = 1;
                 Point A = pointsCopy[j];
                 double slopeRA = refPoint.slopeTo(A);
                 Point B = pointsCopy[j + 1];
                 while (slopeRA == refPoint.slopeTo(B)) {
-                    if (j + count >= pointsCopy.length) {
+                    element += 1;
+                    count += 1;
+
+                    if (j + count > pointsCopy.length - 1) {
                         break;
                     }
                     B = pointsCopy[j + count];
-                    count += 1;
+
                 }
-                if (count >= 4) {
-                    Arrays.sort(pointsCopy, j, j + count - 2);
+                if (element >= 3) {
+                    Arrays.sort(pointsCopy, j, j + element - 1);
                     if (refPoint.compareTo(pointsCopy[j]) <= 0) {
                         min = refPoint;
-                        max = pointsCopy[j + count - 2];
+                        max = pointsCopy[j + element - 1];
                     }
-                    else if(refPoint.compareTo(pointsCopy[j + count - 2]) >= 0) {
+                    else if(refPoint.compareTo(pointsCopy[j + element - 1]) >= 0) {
                         max = refPoint;
                         min = pointsCopy[j];
                     }
                     else {
-                        max = pointsCopy[j + count - 2];
+                        max = pointsCopy[j + element - 1];
                         min = pointsCopy[j];
                     }
                     j = j + count - 1;
@@ -81,7 +85,7 @@ public class FastCollinearPoints {
 
                 }
                 else {
-                    j = j + count - 1;
+                    j = j + count;
                 }
 
             }
@@ -113,9 +117,12 @@ public class FastCollinearPoints {
 
     private boolean checkDuplicates(Point[] points) {
         for (int i = 0; i < points.length - 1; i += 1) {
-            if (points[i].slopeTo(points[i + 1]) == Double.NEGATIVE_INFINITY) {
-                return true;
+            for (int j = i + 1; j < points.length; j += 1) {
+                if (points[i].slopeTo(points[j]) == Double.NEGATIVE_INFINITY) {
+                    return true;
+                }
             }
+
         }
         return false;
     }
@@ -126,7 +133,7 @@ public class FastCollinearPoints {
     }
     // the line segments
     public LineSegment[] segments() {
-        return segments;
+        return segments.clone();
     }
 
     public static void main(String[] args) {
